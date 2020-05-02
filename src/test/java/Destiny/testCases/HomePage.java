@@ -39,7 +39,7 @@ public class HomePage extends BaseWebPage {
 		String text =lp.featuredText().getText();
 		//System.out.println(text);
 		lp.featuredText().isDisplayed();
-		
+		System.out.println(text);
 		Assert.assertFalse(lp.featuredText().isDisplayed());
 		log.info(text);;
 		log.info(lp.menuBar().getText());
