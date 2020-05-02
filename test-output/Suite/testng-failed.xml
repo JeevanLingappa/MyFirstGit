@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Destiny.testCases.Listeners"/>
+    <listener class-name="utils.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Destiny.testCases.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+          <include name="ValidationHomePage"/>
+        </methods>
+      </class> <!-- Destiny.testCases.HomePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Test01(failed)">
+    <classes>
+      <class name="Destiny.testCases.LoginPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Login"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Destiny.testCases.LoginPage -->
+    </classes>
+  </test> <!-- Test01(failed) -->
+</suite> <!-- Failed suite [Suite] -->
