@@ -41,7 +41,7 @@ public class LoginPage extends BaseWebPage {
 		String str = lpo.getErrorDetails().getText();
 		System.out.println(str);
 		//Assert.assertEquals(lpo.getErrorDetails().getText(), "Invalid email or password.");
-			
+		System.out.println("Comment added fir git");	
 		
 	}
 	
